@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrudScreen" android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultes suas Consultas"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pesquise suas consultas"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkCep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cep" />
+
+            <CheckBox
+                android:id="@+id/checkBlockChain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blockchain" />
+
+            <Button
+                android:id="@+id/btnPesquisar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0C05FF"
+                android:insetLeft="20dp"
+                android:text="Pesquisar" />
+
+            <TextView
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atualize uma consulta"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idConsultaAtualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite o id para atualizar"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escolha o tipo da consulta para atualiza-la"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/tipoConsultaRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioCep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Cep" />
+
+                <RadioButton
+                    android:id="@+id/radioBlockChain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BlockChain" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnAtualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0C05FF"
+                android:insetLeft="20dp"
+                android:text="Atualizar" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete uma consulta"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idConsultaDeletar"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite o id para deletar"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnDeletar"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0C05FF"
+                android:insetLeft="20dp"
+                android:text="Deletar" />
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0C05FF"
+                android:insetLeft="20dp"
+                android:text="Voltar" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
